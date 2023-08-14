@@ -22,7 +22,7 @@ app.get('/',(req,res)=>{
 
 app.use('/api',require('./Routes/CreateUser'));
 app.use('/api',require('./Routes/DisplyData'));
-app.use('/api',require('./Routes/orderdata'));
+app.use('/api',require('./Routes/OrderData'));
 const path = require('path');
 
 app.use(express.static(path.join(__dirname, "./client/build")));
