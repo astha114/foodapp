@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.post('/foodData',(req,res)=>{
     try{
-        console.log([global.food_items,global.foodCategory])
+        console.log(global)
         res.send([global.food_items,global.foodCategory])
     }
     catch(error) {
