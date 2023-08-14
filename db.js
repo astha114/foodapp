@@ -13,6 +13,7 @@ const connectToMongoDb = async () => {
                         else{
                                 global.food_items = data;
                                 global.foodCategory = catData;
+                                console.log(data,catData)
                         }
 
                 })
