@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 require('dotenv').config()
-const mongoURI = process.env.MONGO_URI
+const mongoURI = "mongodb+srv://astharai572:astha123@merncluster.de2xyob.mongodb.net/gofoodmern?retryWrites=true&w=majority"
 
 const connectToMongoDb = async () => {
         await mongoose.connect(mongoURI, { useNewUrlParser: true });
