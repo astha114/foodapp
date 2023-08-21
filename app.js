@@ -16,7 +16,8 @@ app.use((req,res,next)=>{
 mongoDB();
 app.use(express.json())
 
-app.get('/login',(req,res)=>{
+app.get('/',(req,res)=>{
+    res.redirect('/login')
     res.send('hello')
 })
 
