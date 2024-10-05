@@ -17,8 +17,8 @@ mongoDB();
 app.use(express.json())
 
 app.get('/',(req,res)=>{
-    res.redirect('/login')
     res.send('hello')
+    res.redirect('/login')  
 })
 
 app.use('/api',require('./Routes/CreateUser'));
